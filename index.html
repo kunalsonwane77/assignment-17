@@ -1,59 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
     <style>
-        .cards-contaner{
-          text-align: center;
-            
+        .cards-contaner {
+            text-align: center;
+            display: flex;
+            justify-content: start;
+
+
         }
-        .cards{
+
+        .cards-contaner2 {
+            text-align: center;
+            display: flex;
+            justify-content: end;
+            flex-direction: row-reverse;
+
+        }
+
+        .cards-contaner3 {
+            text-align: center;
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .cards-contaner4 {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+        }
+        .cards-contaner5 {
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+
+        }
+        .cards-contaner6 {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+        }
+        .cards-contaner7 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .cards-contaner8 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: end;
+
+        }
+
+        .heading {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .cards {
             background-color: aliceblue;
             border: 1px solid black;
-            border-radius: 5px;
-            width: 230px;
-            height:450px;
+            border-radius: 15px;
+            width: 200px;
+            height: 320px;
             padding: 10px;
-            
-        }
-        .img{
-            height: 400px;
+            box-shadow: 0 0 8px 2px black;
 
+        }
+
+        .img {
+            width: 180px;
+            height: 280px;
+        }
+
+        .cards:hover {
+            width: 220px;
+            height: 340px;
+            transition: 0.4s;
+            box-shadow: 0 0 15px 3px black;
+        }
+
+        .img:hover {
+            width: 200px;
+            height: 300px;
+            transition: 0.4s;
         }
     </style>
 </head>
+
 <body>
+    <h1 class="heading">use of all flexbox properties</h1>
+    <p class="heading">using justify-content start</p>
     <div class="cards-contaner">
 
-<div class="cards">
-    <img src="card1.webp" class="img">
-</div>
+        <div class="cards">
+            <img src="card1.webp" class="img">
+            <p>1</p>
+        </div>
 
-<div class="cards">
-    <img src="card2.jpg" class="img">
-</div>
+        <div class="cards">
+            <img src="card2.jpg" class="img">
+            <p>2</p>
+        </div>
 
-<div class="cards">
-    <img src="card3.webp" class="img">
-</div>
+        <div class="cards">
+            <img src="card3.webp" class="img">
+            <p>3</p>
+        </div>
 
-<div class="cards">
-    <img src="card4.jpg" class="img">
-</div>
-<div class="cards">
-    <img src="card5.webp" class="img">
-</div>
+        <div class="cards">
+            <img src="card4.jpg" class="img">
+            <p>4</p>
+        </div>
+        <div class="cards">
+            <img src="card5.webp" class="img">
+            <p>5</p>
+        </div>
 
+    </div>
+    <br><br>
+    <p class="heading">using justify-content end and row-reverse</p>
+    <div class="cards-contaner2">
 
+        <div class="cards">
+            <img src="card1.webp" class="img">
+            <p>1</p>
+        </div>
 
+        <div class="cards">
+            <img src="card2.jpg" class="img">
+            <p>2</p>
+        </div>
 
+        <div class="cards">
+            <img src="card3.webp" class="img">
+            <p>3</p>
+        </div>
 
+        <div class="cards">
+            <img src="card4.jpg" class="img">
+            <p>4</p>
+        </div>
+        <div class="cards">
+            <img src="card5.webp" class="img">
+            <p>5</p>
+        </div>
 
 
 
 
     </div>
+    <br><br>
+    <p class="heading">using justify-column</p>
+    <div class="cards-contaner3">
+
+        <div class="cards">
+            <img src="card1.webp" class="img">
+            <p>1</p>
+        </div>
+
+        <div class="cards">
+            <img src="card2.jpg" class="img">
+            <p>2</p>
+        </div>
+
+        <div class="cards">
+            <img src="card3.webp" class="img">
+            <p>3</p>
+        </div>
+
+        <div class="cards">
+            <img src="card4.jpg" class="img">
+            <p>4</p>
+        </div>
+        <div class="cards">
+            <img src="card5.webp" class="img">
+            <p>5</p>
+        </div>
+
+        <p class="heading">using space-between</p>
+        <div class="cards-contaner4">
+    
+            <div class="cards">
+                <img src="card1.webp" class="img">
+                <p>1</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card2.jpg" class="img">
+                <p>2</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card3.webp" class="img">
+                <p>3</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card4.jpg" class="img">
+                <p>4</p>
+            </div>
+            <div class="cards">
+                <img src="card5.webp" class="img">
+                <p>5</p>
+            </div>
+    
+        </div>
+        <br><br>
+        <p class="heading">using justify-content space-around</p>
+        <div class="cards-contaner5">
+    
+            <div class="cards">
+                <img src="card1.webp" class="img">
+                <p>1</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card2.jpg" class="img">
+                <p>2</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card3.webp" class="img">
+                <p>3</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card4.jpg" class="img">
+                <p>4</p>
+            </div>
+            <div class="cards">
+                <img src="card5.webp" class="img">
+                <p>5</p>
+            </div>
+    
+        </div>
+        <br><br>
+        <p class="heading">using justify-space-evenly</p>
+        <div class="cards-contaner6">
+    
+            <div class="cards">
+                <img src="card1.webp" class="img">
+                <p>1</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card2.jpg" class="img">
+                <p>2</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card3.webp" class="img">
+                <p>3</p>
+            </div>
+    
+            <div class="cards">
+                <img src="card4.jpg" class="img">
+                <p>4</p>
+            </div>
+            <div class="cards">
+                <img src="card5.webp" class="img">
+                <p>5</p>
+            </div>
+    
+        </div>
+        <br><br>
+        <p class="heading">using align-items center justify-content center</p>
+    <div class="cards-contaner7">
+
+        <div class="cards">
+            <img src="card1.webp" class="img">
+            <p>1</p>
+        </div>
+
+        <div class="cards">
+            <img src="card2.jpg" class="img">
+            <p>2</p>
+        </div>
+
+        <div class="cards">
+            <img src="card3.webp" class="img">
+            <p>3</p>
+        </div>
+
+        <div class="cards">
+            <img src="card4.jpg" class="img">
+            <p>4</p>
+        </div>
+        <div class="cards">
+            <img src="card5.webp" class="img">
+            <p>5</p>
+        </div>
+
+    </div>
+    <br><br>
+    <p class="heading">using align-items end</p>
+    <div class="cards-contaner8">
+
+        <div class="cards">
+            <img src="card1.webp" class="img">
+            <p>1</p>
+        </div>
+
+        <div class="cards">
+            <img src="card2.jpg" class="img">
+            <p>2</p>
+        </div>
+
+        <div class="cards">
+            <img src="card3.webp" class="img">
+            <p>3</p>
+        </div>
+
+        <div class="cards">
+            <img src="card4.jpg" class="img">
+            <p>4</p>
+        </div>
+        <div class="cards">
+            <img src="card5.webp" class="img">
+            <p>5</p>
+        </div>
+
+    </div>
+    </div>
 </body>
+
 </html>
